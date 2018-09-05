@@ -2920,7 +2920,7 @@ extend-shallow@^3.0.0, extend-shallow@^3.0.2:
     assign-symbols "^1.0.0"
     is-extendable "^1.0.1"
 
-extend@3, extend@~3.0.0:
+extend@3, extend@^3.0.1, extend@~3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
 
@@ -6358,7 +6358,7 @@ script-onload@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/script-onload/-/script-onload-1.0.2.tgz#6bdca122875487192ccaf4e6884fcfdd0c7fde32"
 
-segmentio-facade@^3.0.2, segmentio-facade@^3.0.3, segmentio-facade@^3.2.0, segmentio-facade@^3.2.2:
+segmentio-facade@^3.0.2, segmentio-facade@^3.0.3, segmentio-facade@^3.1.0, segmentio-facade@^3.2.0, segmentio-facade@^3.2.2:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/segmentio-facade/-/segmentio-facade-3.2.3.tgz#7ddc6971801a482475b6a768184696a847e9197d"
   dependencies:
@@ -7114,7 +7114,7 @@ tmp@0.0.33, tmp@0.0.x, tmp@^0.0.33:
   dependencies:
     os-tmpdir "~1.0.2"
 
-to-array@0.1.4:
+to-array@0.1.4, to-array@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/to-array/-/to-array-0.1.4.tgz#17e6c11f73dd4f3d74cda7a4ff3238e9ad9bf890"
 
