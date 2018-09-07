@@ -71,6 +71,16 @@ FacebookPixel.prototype.loaded = function() {
 };
 
 /**
+ * Re-init Facebook Pixel with the hashed traits.
+ */
+FacebookPixel.prototype.identify = function() {
+  if (this.options.initWithExistingTraits) {
+    var traits = formatTraits(this.analytics);
+    window.fbq('init', this.options.pixelId, traits);
+  }
+}
+
+/**
  * Trigger a page view.
  *
  * @param {Facade} identify

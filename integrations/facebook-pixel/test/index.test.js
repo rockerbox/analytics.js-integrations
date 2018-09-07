@@ -128,6 +128,36 @@ describe('Facebook Pixel', function() {
       analytics.initialize();
     });
 
+    describe('.identify()', function() {
+      beforeEach(function() {
+        analytics.stub(window, 'fbq');
+      });
+
+      before(function() {
+        options.initWithExistingTraits = true;
+      });
+
+      after(function() {
+        options.initWithExistingTraits = false;
+      });
+
+      it('should re-init Facebook Pixel with traits', function() {
+        var payload = {
+          "fn": "pikachu",
+          "ge": "m",
+          "db": "19910113",
+          "ct": "emerald",
+          "st": "kanto",
+          "zp": 123456
+        };
+
+        analytics.identify('123', {
+          name: 'pikachu'
+        });
+        analytics.called(window.fbq, 'init', options.pixelId, payload);
+      });
+    });
+
     describe('#page', function() {
       beforeEach(function() {
         analytics.stub(window, 'fbq');
